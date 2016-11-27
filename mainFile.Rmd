@@ -9,73 +9,17 @@ source("./updatePackage.R",  echo=FALSE)
 source("./getHousePrices.R", echo=FALSE)
 source("./importPrices.R",   echo=FALSE)
 source("./getGDP.R",         echo=FALSE)
+source("./graphGDPhouseholdConsumption.R",echo=FALSE)
 ```
-Create a data frame.
+This is a paper about housing and consumption.  Here is a pretty graph which illustrates that Consumption by households is a large portion of GDP.
 
 ```{r}
 
 prices[,2]<-rows
-#rows
-#prices[,2]
-```
-```{r}
-## melt from "reshape2" gives one observation per row
-## this is known as tidy data
-p1<-melt(prices)
+p3
 ```
 
 ```{r}
-y<-prices[1,-c(1,2)] ##(Total) National Average Home P.
-nationalAVG<-y
-national1.5<-gather(prices[2,-c(1,2)])
-national2.5<-gather(prices[3,-c(1,2)])
-national3.5<-gather(prices[4,-c(1,2)])
-national4.5<-gather(prices[5,-c(1,2)])
-JerusalemAVG<-gather(prices[6,-c(1,2)])
-Jerusalem1.5<-gather(prices[7,-c(1,2)])
-Jerusalem2.5<-gather(prices[8,-c(1,2)])
-Jerusalem3.5<-gather(prices[9,-c(1,2)])
-Jerusalem4.5<-gather(prices[10,-c(1,2)])
-tlvAVG<-gather(prices[11,-c(1,2)])
-tlv1.5<-gather(prices[12,-c(1,2)])
-tlv2.5<-gather(prices[13,-c(1,2)])
-tlv3.5<-gather(prices[14,-c(1,2)])
-tlv4.5<-gather(prices[15,-c(1,2)])
-HaifaAVG<-gather(prices[16,-c(1,2)])
-Haifa1.5<-gather(prices[17,-c(1,2)])
-Haifa2.5<-gather(prices[18,-c(1,2)])
-Haifa3.5<-gather(prices[19,-c(1,2)])
-Haifa4.5<-gather(prices[20,-c(1,2)])
-GushDanAVG<-gather(prices[21,-c(1,2)])
-GushDan1.5<-gather(prices[22,-c(1,2)])
-GushDan2.5<-gather(prices[23,-c(1,2)])
-GushDan3.5<-gather(prices[24,-c(1,2)])
-GushDan4.5<-gather(prices[25,-c(1,2)])
-centerJeruPeriAVG<-gather(prices[26,-c(1,2)])
-centerJeruPeri1.5<-gather(prices[27,-c(1,2)])
-centerJeruPeri2.5<-gather(prices[28,-c(1,2)])
-centerJeruPeri3.5<-gather(prices[29,-c(1,2)])
-centerJeruPeri4.5<-gather(prices[30,-c(1,2)])
-SouthAVG<-gather(prices[31,-c(1,2)])
-South1.5<-gather(prices[32,-c(1,2)])
-South2.5<-gather(prices[33,-c(1,2)])
-South3.5<-gather(prices[34,-c(1,2)])
-South4.5<-gather(prices[35,-c(1,2)])
-SharonAVG<-gather(prices[36,-c(1,2)])
-Sharon1.5<-gather(prices[37,-c(1,2)])
-Sharon2.5<-gather(prices[38,-c(1,2)])
-Sharon3.5<-gather(prices[39,-c(1,2)])
-Sharon4.5<-gather(prices[40,-c(1,2)])
-NorthAVG<-gather(prices[41,-c(1,2)])
-North1.5<-gather(prices[42,-c(1,2)])
-North2.5<-gather(prices[43,-c(1,2)])
-North3.5<-gather(prices[44,-c(1,2)])
-North4.5<-gather(prices[45,-c(1,2)])
-qrayotHaifaAVG<-gather(prices[46,-c(1,2)])
-qrayotHaifa1.5<-gather(prices[47,-c(1,2)])
-qrayotHaifa2.5<-gather(prices[48,-c(1,2)])
-qrayotHaifa3.5<-gather(prices[49,-c(1,2)])
-qrayotHaifa4.5<-gather(prices[50,-c(1,2)])
 
 
 ```
@@ -83,24 +27,51 @@ qrayotHaifa4.5<-gather(prices[50,-c(1,2)])
 ## sample graph of National Average House P.
 ## gather function changes wide format to tall
 ylong=gather(y)
-qplot(key, value,
-      ylab="NIS thousand",
-      xlab="2006-2016",
-      data=ylong,main="National AVG House Price")
-## regional avg house P.s
-qplot(key,value,data=JerusalemAVG,
-      ylab="NIS thousand",xlab="2006-2016",
-      main="Jerusalem AVG House Price")
-qplot(key,value,data=tlvAVG,
-      ylab="NIS thousand",xlab="2006-2016",
-      main="TLV AVG House Price")
-```
-```{r}
-consumption5$`Household Consumption`
-ggplot(data=consumption5, aes(
-        x=year,
-        y=`Household Consumption`,
-      group=1)
-      )+geom_point()+geom_line()
+source("./groupHouseSize.R",echo=FALSE)
+plot1.5rooms<-ggplot(data=p1.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 1.5-2.5 bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot1.5rooms
+plot2.5rooms<-ggplot(data=p2.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 2.5-3.5 bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot2.5rooms
+plot3.5rooms<-ggplot(data=p3.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 3.5-4.5 bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot3.5rooms
+plot4.5rooms<-ggplot(data=p4.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 4.5+ bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                                                                              
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot4.5rooms
 ```
 
