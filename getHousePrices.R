@@ -1,0 +1,6 @@
+downloadHousingPrices(16)
+downloadHousingPrices(14)
+downloadHousingPrices(13)
+downloadHousingPrices(11)
+downloadHousingPrices(09)
+downloadHousingPrices(07)

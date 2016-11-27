@@ -1,0 +1,38 @@
+---
+title: "download the excel housing prices"
+output: html_notebook
+---
+  insert block:  CMD+alt+i
+  *Run*   *Cmd+Shift+Enter*. 
+
+```{r}
+library(curl)
+getwd()
+# install.packages("rJava",type="source")
+# install.packages("xlsx")
+library(rJava)
+library(xlsx) 
+```
+Download the Housing Prices from the CBS.
+```{r}
+## list of files on CBS site  
+## 2014,15,16q1-q3
+yr14_16.url ="http://www.cbs.gov.il/www/price_new/a6_2_e.xls"
+## 2013,12
+yr12_13.url="http://www.cbs.gov.il/www/archive/201403/price_new/a6_2_e.xls"
+## 2011,10
+yr10_11.url="http://www.cbs.gov.il/www/archive/201203/price_new/a6_2_e.xls"
+## 2009,08
+yr08_09.url="http://www.cbs.gov.il/www/archive/201003/price_new/a6_2_e.xls"
+## 2007,06
+yr06_07.url="http://www.cbs.gov.il/www/archive/200803/price_new/a6_2_e.xls"
+## 05,04
+## no quarterly data publicly available for this year.
+## http://www.cbs.gov.il/www/archive/200603/price/t16_3_e.xls
+```
+Read the xls files into R as dataframes.
+```{r}
+library(xlsx)
+# mydata<-read.xlsx("yr06_07.xls")
+```
+

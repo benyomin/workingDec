@@ -1,0 +1,5 @@
+* GDP data from:
+** World Databank
+databank.worldbank.org
+** Israel GDP
+http://databank.worldbank.org/data/GDP_Consumption/id/23d46de2
