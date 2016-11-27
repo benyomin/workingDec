@@ -1,0 +1,3 @@
+* Readme.org
+** this directory is stored on github.com/benyomin/workingDec
+*** it is public, be careful what you type or put here.
