@@ -2,6 +2,7 @@
 \usepackage[]{kpfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -28,7 +29,7 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage[style=chicago-authordate]{biblatex}
+\usepackage[style=numeric]{biblatex}
 
 \addbibresource{currentEcon.bib}
 \usepackage{longtable,booktabs}
@@ -97,7 +98,7 @@
 \maketitle
 
 \begin{abstract}
-This is the abstract of my paper.
+Uses pseudo-panel construction to calculate the housing wealth effect for regional cohorts of Isreali households. Combines data from the Central Bureau of Statistics Household Expenditure Survey and the Consumer Price Index.
 \end{abstract}
 
 \begin{keywords}
