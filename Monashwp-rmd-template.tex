@@ -1,0 +1,206 @@
+\documentclass[12pt,a4paper,]{article}
+\usepackage[]{kpfonts}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Calculating the Housing Wealth Effect of Israeli regional cohorts},
+            pdfauthor={Brandon Payne},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[style=authoryear-comp]{biblatex}
+
+\addbibresource{references.bib}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{Calculating the Housing Wealth Effect of Israeli regional cohorts}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Brandon Payne}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \date{}
+  \predate{}\postdate{}
+
+\usepackage{benyominwp}
+
+% META DATA
+
+\wp{Housing Wealth Effect Proposal}
+
+\jel{C10,C14,C22}
+
+\addresses{
+\textbf{Brandon Payne}\\
+                Woodman-Scheller Israel Studies International Program\\
+                Ben-Gurion University of the Negev\\
+                Email: payneb@post.bgu.ac.il\\[1cm]
+}
+
+\lfoot{\sf Payne: \Date~\Month~\Year}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This is the abstract of my paper.
+\end{abstract}
+
+\begin{keywords}
+ consumption, economics, housing, housing market, liquidity constraints, wealth effect 
+\end{keywords}
+
+\newpage
+
+\section{Introduction}\label{introduction}
+
+\subsection{The housing market}\label{the-housing-market}
+
+The study of housing provides a fascinating topic for the researcher of
+Israeli society. Several factors have drawn attention to the housing
+market and made it a topic of much discussion. The price of housing was
+one of the main issues that drove more than 400,000 demonstrators to the
+streets in the summer of 2011. Large portions of the Israeli population
+own a home, or rent one, or live in a multi-family household. Their
+first-hand experience of the market may be relayed to the researcher as
+anecdotal evidence of the state of the housing market, as well as causes
+and solutions for the perceived short-comings of the market.
+
+In a simple economic model of the housing market, house prices are set
+by the market forces of supply and demand. Various influences on
+suppliers of housing (current owners who choose to sell, builders of new
+housing), and those who demand housing (commonly characterized as young
+couples) will shift the supply and demand curves and affect the
+market-clearing price level. Consider an interest-rate reduction, this
+shifts the demand curve to the right, as cheaper credit causes more
+buyers to enter the market. It also reduces credit-constraints on
+builders and leads to increased supply, albeit after some lag.
+
+The average house price has risen by an astonishing 80\% between the
+2008 global financial crisis and 2016. In the minds of many lay
+observers this indicates a lack of supply, with main bottlenecks
+limiting supply being cited as the sale of government land or the
+lengthy permitting process for new construction.
+
+Gruber(citation) however offers copious evidence and cogent reasoning to
+support his claim that the chief factor in the rise was actually
+excessive demand. As global capital markets suffered large declines
+investors moved to other asset classes, including the real estate
+market. The additional factor of low interest rates lead to a dramatic
+increase in purchase of additional houses by those who were already
+owner-occupiers. This shifted the demand curve to the right, increasing
+the average cost of an apartment and driving out less affluent
+first-time homebuyers. These would-be first-time homebuyers then entered
+or remained in the rental market, driving up average rents. The higher
+market rental prices and lowered vacancy rate established a feedback
+loop which further encouraged in the purchase of investment houses as
+rental property. \#\# Consumption by Households The expenditure method
+for calculating National Income (Y), states that Y=GDP=C+I+G+NX. The
+gross domestic product is equal to Consumption Expenditure (C) plus
+Investment Expenditure (I) plus Government Expenditure (G) plus Net
+Exports (NX). Firms and households each engage in both consumption and
+investment. When a firm buys a copy machine which lasts several years,
+that is an investment, so is the purchase of owner-occupied housing, in
+fact it's one of the chief investments made by households. The paper
+placed in the copy machine and the food on the table are each classified
+as consumption. Consumption by households makes up a large and important
+part of GDP. It is a measure tracked closely by businesses, economists
+and the government. You may have heard the nightly news announce the
+latest retail-sales data. Household income is either saved or consumed,
+with the marginal propensity to consume (MPC) and the marginal
+propensity to save (MPS) summing to 1. Generally household consumption
+can be understood as household income times the MPC. The MPC can be
+affected by the interest rate, rising interest rates incentivize
+additional savings, raising the MPS and lowering the MPC. Falling
+interest rates decrease the attraction of savings. With a constant MPC a
+household can increase consumption due to increased income from a salary
+increase, hourly wage increase or increase in the number of hours
+worked. Household consumption would fall due a decrease in salary, wages
+or working hours. A further factor in consumption is expected future
+income. This posits that the rational consumer increases their
+consumption now if they know that they will get a raise or some overtime
+next week. They will also reduce consumption and increase savings now
+when they expect future unemployment or wage reductions. Another factor
+affecting consumption is the wealth effect. When the wealth of a
+household increases (the price of shares held in an investment
+portfolio, the price of Picasso on the wall or in a vault, the price of
+the family home or rental property), household consumption increases, in
+effect spending now some of the expected future gains on the sale of the
+shares, painting or real estate. Conversely, a decline in household
+wealth should produce a decline in household consumption and GDP. \#\#
+the wealth effect, or wealth effects? This study combines household
+level consumption data with housing price data to estimate test the
+hypothesis that different age cohorts have different wealth effects. It
+has been postulated that older households will have a higher wealth
+effect, or larger proportional change in spending in response to a
+change in wealth than a younger household. The available consumption
+data from the Household Expenditure Survey provides us with a means to
+test this hypothesis.
+
+\begin{figure}
+\centering
+\includegraphics{Monashwp-rmd-template_files/figure-latex/histogram-1.pdf}
+\caption{\label{fig:histogram}Nice histogram}
+\end{figure}
+
+Consider the logNormal data plotted in Figure \ref{fig:histogram}.
+
+\printbibliography
+
+
+\end{document}
