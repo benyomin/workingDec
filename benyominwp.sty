@@ -1,15 +1,10 @@
-%% monashwp style for LaTeX2e.
-%% version 3.1
-%% By Rob J. Hyndman. 25 August 2016
-%%
-%% This style file is for working papers published by
-%% the Department of Econometrics & Business Statistics
-%% at Monash University, Australia.
-%% All required packages are on CRAN.
-
+%% Ben-Gurion Research Institute House Style
+%% Derives from Monash University Thesis-Alternate Style
 %%\NeedsTeXFormat{LaTeX2e}
+% changelog
+% 0.14 fixing amsmath load error
 \ProvidesPackage{benyominwp}
-          [2016/08/25 v3.1]
+          [2016/December/01 v0.14]
 
 %% Page dimensions
 \@ifpackageloaded{geometry}{}{\RequirePackage{geometry,biblatex-chicago}}
@@ -17,6 +12,7 @@
 
 %% CAPTIONS
 \RequirePackage{caption}
+\RequirePackage{amsmath}
 \DeclareCaptionStyle{italic}[justification=centering]
  {labelfont={bf},textfont={it},labelsep=colon}
 \captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
@@ -166,7 +162,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
+\usepackage{amsmath}
 \usepackage[showonlyrefs]{mathtools}
 \usepackage[no-weekday]{eukdate}
 
