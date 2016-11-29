@@ -1,6 +1,6 @@
 #group by # of rooms
-y<-prices[1,-c(1,2)] ##(Total) National Average Home P.
-nationalAVG<-y
+# prices[1,-c(1,2)] ##(Total) National Average Home P.
+nationalAVG<-prices[1,-c(1,2)] ##(Total) National Average Home P.
 national1.5<-gather(prices[2,-c(1,2)])
 national2.5<-gather(prices[3,-c(1,2)])
 national3.5<-gather(prices[4,-c(1,2)])

@@ -2,13 +2,11 @@
 \usepackage[]{kpfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-%\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
 \else % if luatex or xelatex
   \ifxetex
-  \usepackage{newtxmath}
     \usepackage{mathspec}
   \else
     \usepackage{fontspec}
@@ -30,7 +28,7 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage[notes]{biblatex-chicago}
+\usepackage[style=chicago-authordate]{biblatex}
 
 \addbibresource{currentEcon.bib}
 \usepackage{longtable,booktabs}
@@ -196,6 +194,12 @@ will have a higher wealth effect, or larger proportional change in
 spending in response to a change in wealth than a younger household. The
 available consumption data from the Household Expenditure Survey
 provides us with a means to test this hypothesis.
+\includegraphics{mainDecProposal_files/figure-latex/FigureOne-1.pdf}
+\includegraphics{mainDecProposal_files/figure-latex/FigureOne-2.pdf}
+\includegraphics{mainDecProposal_files/figure-latex/FigureOne-3.pdf}
+\includegraphics{mainDecProposal_files/figure-latex/FigureOne-4.pdf}
+
+Consider the pretty data plotted in Figure \ref{fig:FigureOne}.
 
 \begin{figure}
 \centering
@@ -204,7 +208,7 @@ provides us with a means to test this hypothesis.
 \end{figure}
 
 Consider the logNormal data plotted in Figure \ref{fig:histogram}.
-\nocite{*}
+
 \printbibliography
 
 

@@ -5,7 +5,7 @@ fontsize: 12pt
 papersize: a4
 fontfamily: kpfonts
 bibliography: currentEcon.bib
-biblio-style: notes
+biblio-style: chicago-authordate
 subparagraph: true
 toc: false
 output: 
@@ -17,7 +17,7 @@ output:
       in_header: preamble.tex
     keep_tex: yes
     number_sections: yes
-    citation_package: biblatex-chicago
+    citation_package: biblatex
 ---
 
 ```{r setup, include=FALSE}
@@ -75,6 +75,62 @@ Another factor affecting consumption is the wealth effect. When the wealth of a 
 
 ## the wealth effect, or wealth effects?
 This study combines household level consumption data with housing price data to estimate test the hypothesis that different age cohorts have different wealth effects. It has been postulated that older households will have a higher wealth effect, or larger proportional change in spending in response to a change in wealth than a younger household. The available consumption data from the Household Expenditure Survey provides us with a means to test this hypothesis.
+```{r FigureOne, fig.cap="I wrote this.", message=FALSE, warning=FALSE}
+## sample graph of National Average House P.
+## gather function changes wide format to tall
+#ylong=gather(y)
+source("./groupHouseSize.R",echo=FALSE)
+plot1.5rooms<-ggplot(data=p1.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 1.5-2.5 bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot1.5rooms
+plot2.5rooms<-ggplot(data=p2.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 2.5-3.5 bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot2.5rooms
+plot3.5rooms<-ggplot(data=p3.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 3.5-4.5 bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot3.5rooms
+plot4.5rooms<-ggplot(data=p4.5,aes(x=quarter,
+                     y=value,
+                    
+                     group=variable
+                     ))+geom_line(aes(colour=variable))+
+                     ggtitle("Average P. 4.5+ bedroom home:2006-2016q3")+theme(legend.title=element_blank(),
+                                                                              
+                   panel.grid.major.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   axis.ticks.x = element_blank(),
+                   axis.text.x=element_blank())+ ylab("NIS x 100k")
+plot4.5rooms
+
+
+```
+
+Consider the pretty data plotted in Figure \ref{fig:FigureOne}.
+
 
 ```{r histogram, fig.cap="Nice histogram", message=FALSE, warning=FALSE}
 qplot(exp(rnorm(200)))
