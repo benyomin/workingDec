@@ -1,0 +1,707 @@
+% This is the Reed College LaTeX thesis template. Most of the work
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See http://web.reed.edu/cis/help/latex.html for help. There are a
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment.
+% They won't show up in the document, and are useful for notes
+% to yourself and explaining commands.
+% Commenting also removes a line from the document;
+% very handy for troubleshooting problems. -BTS
+
+% As far as I know, this follows the requirements laid out in
+% the 2002-2003 Senior Handbook. Ask a librarian to check the
+% document before binding. -SN
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+\documentclass[12pt,twoside]{reedthesis}
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
+% Check out CTAN to see: http://www.ctan.org/
+%%
+\usepackage{graphicx,latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb,amsthm}
+\usepackage{longtable,booktabs,setspace}
+\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+\usepackage[hyphens]{url}
+% Added by CII
+\usepackage{hyperref}
+\usepackage{lmodern}
+% End of CII addition
+\usepackage{rotating}
+
+% Next line commented out by CII
+%%% \usepackage{natbib}
+% Comment out the natbib line above and uncomment the following two lines to use the new 
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
+% bibliography is included. 
+%\usepackage{biblatex-chicago}
+%\bibliography{thesis}
+
+
+% Added by CII (Thanks, Hadley!)
+% Use ref for internal links
+\renewcommand{\hyperref}[2][???]{\autoref{#1}}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+% End of CII addition
+
+% Added by CII 
+\usepackage{caption}
+\captionsetup{width=5in}
+% End of CII addition
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+
+% To pass between YAML and LaTeX the dollar signs are added by CII
+\title{Untitled Demography Proposal}
+\author{Brandon Payne}
+% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
+\date{Sept. 2016}
+\division{Ben-Gurion Research Institute}
+\advisor{Dr.~Ben Herzog, advisor}
+%If you have two advisors for some reason, you can use the following
+% Uncommented out by CII
+\altadvisor{committee member} 
+% End of CII addition
+
+%%% Remember to use the correct department!
+\department{Israel Studies International MA Program}
+% if you're writing a thesis in an interdisciplinary major,
+% uncomment the line below and change the text as appropriate.
+% check the Senior Handbook if unsure.
+%\thedivisionof{The Established Interdisciplinary Committee for}
+% if you want the approval page to say "Approved for the Committee",
+% uncomment the next line
+%\approvedforthe{Committee}
+
+% Added by CII
+%%% Copied from knitr
+%% maxwidth is the original width if it's less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\renewcommand{\contentsname}{Table of Contents}
+% End of CII addition
+
+\setlength{\parskip}{0pt}
+
+% Added by CII
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\Acknowledgements{
+
+}
+
+\Dedication{
+
+}
+
+\Preface{
+
+}
+
+\Abstract{
+
+}
+
+	\usepackage[authordate, notes, language=english, backend=biber]{biblatex-chicago}
+	\ExecuteBibliographyOptions{firstinits=false, isbn=false, url=false, doi=true, uniquename=init}
+% End of CII addition
+%%
+%% End Preamble
+%%
+%
+
+\begin{document}
+
+% Everything below added by CII
+      \maketitle
+  
+  \frontmatter % this stuff will be roman-numbered
+  \pagestyle{empty} % this removes page numbers from the frontmatter
+
+  
+  
+      \hypersetup{linkcolor=black}
+    \setcounter{tocdepth}{1}
+    \tableofcontents
+  
+      \listoftables
+  
+      \listoffigures
+  
+  
+  
+  \mainmatter % here the regular arabic numbering starts
+  \pagestyle{fancyplain} % turns page numbering back on
+
+  \chapter*{Introduction}\label{introduction}
+  \addcontentsline{toc}{chapter}{Introduction}
+  
+  \section{Kinds of Russians}\label{kinds-of-russians}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Jews
+  \item
+    non-Jews
+  \item
+    those who immigrated to Israel
+  \item
+    those who immigrated to other countries 1. US 2. Germany and W. Europe
+    3. elsewhere
+  \item
+    those who stayed in Russia
+  \end{itemize}
+  
+  The term \emph{Russian} in common Israeli parlance is a synedoche
+  referring to immigrants from the several states of the Former Soviet
+  Union (FSU) who have arrived in several waves since 1989. An immigrant
+  who came to Israel\footnote{Immigrant to Israel: m.s. \emph{oleh}, f.s.
+    \emph{olah}, pl. \emph{olim}.} in 1992 or 2002 from Georgia or Latvia
+  is a \emph{Russian}. Former Foreign Minister Moshe Sharett was born in
+  the Russian Empire, in what is now Ukraine. He made aliyah in 1910. He
+  may be called an Ashkenazi Jew, a member of the Second Aliyah, the New
+  Yishuv and the Generation of the Founders, but he is not called a
+  \emph{Russian}. The 167,000 Soviet olim between the Six-Day War and 1988
+  form an edge-case, they may be called either Israeli or Russian
+  depending on their perceived level of integration into Israeli society.
+  This research deals with the place of post-1989 FSU olim in the
+  ethnically stratified Israeli labor market. It attempts to determine if
+  the Israeli labor market meets the objective criteria set by economists
+  that would classify it as ethnically stratified. It then looks for data
+  which could aid in placing the Russians within this system of
+  stratification. Finally it seeks to determine their place within this
+  system and any changes that have occurred over time to the system and
+  their position within it.
+  
+  \chapter{Population of Israel}\label{sec:orgheadline3}
+  
+  At the end of 2015 the population of Israel included 6.2 million Jews,
+  1.7 million Arabs and 357,500 others.\footnote{(Statistics 2015).} Among
+  these others are 300,000 non-Jewish immigrants from the FSU.\footnote{(Cohen
+    2009).} These new immigrants from the FSU entered into a labor market
+  with an existing system of stratification, with European and American
+  Jews and the top, African and Asian Jews in the middle and Arab citizens
+  of Israel at the bottom.\footnote{(Haberfeld and Cohen 2007).}
+  Historical migration patterns had put this stratified system in place,
+  with pre-state immigration mostly coming from Central and Eastern
+  Europe. These early immigrants established the pre-state institutions
+  that became the foundations of the Israeli state. They were in an
+  advantageous position to occupy positions of high status and high
+  political, economic and social power. The lasting socioeconomic effects
+  of the circumstances surrounding initial absorption conditions and
+  spatial location have been noted.\footnote{(Bar-haim and Semyonov 2015,
+    325--26).} Among the dimensions of social stratification are income,
+  occupation, education, political power, standard of living and place of
+  residence.\footnote{(Semyonov and Lewin-Epstein 1987, 8).} This paper
+  specifically reviews the question of occupational stratification as
+  measured by occupational prestige.
+  
+  \section{Arrival of the Russians}\label{sec:orgheadline2}
+  
+  After the founding of the state, a Mass Immigration (1948-1952) took
+  place which more than doubled the population from 600,000 to almost 1.5
+  million. Immigration then became moderate and sporadic from 1953 to
+  1989,(Bar-haim and Semyonov 2015, 325) averaging around 50,000 per
+  year.(Goldscheider 2002, 43) The first wave of FSU olim, from 1989 to
+  1991 numbered 400,000. The second wave lasted until 1995 and brought
+  300,000 more. Between 1995 and 2006 50,000 more arrived in
+  Israel.(Israel Central Bureau of Statistics 2009) The conditions of FSU
+  olim absorption, including the shift in government policy in 1989-1990
+  to \emph{direct absoption} in which olim received an \emph{absorption
+  basket} of grants which they then had discrection to spend have been
+  discussed and compared with earlier policies.(Semyonov, Moshe;
+  Lewin-Epstein 2011) One finding was that, used to full-employment and
+  low-quality housing in the Soviet Union, FSU olim would share crowded,
+  expensive accomodations in the center of Israel rather than one-family
+  flats in peripheral areas.\footnote{(Evans 2011).} Recent interviews
+  with FSU olim who were University students in Israel showed the
+  persistence of a drive for higher education, despite its decreased
+  monetary rewards in Israel as compared to the Soviet Union.\footnote{(Lerner,
+    Rapoport, and Lomsky-Feder 2007).}
+  
+  \chapter{Labor Market Stratification Theory}\label{sec:orgheadline4}
+  
+  The theory of an ethnically stratified labor market was elaborated by
+  Edna Bonacich. Different ethnic groups in the labor market have varying
+  costs of labor due to differing resources and motives for participation
+  in the labor market. Ethnic antagonism will result from this price
+  differential as the higher-priced group attempts to maintain employment.
+  The expensive labor group will attempt to resist displacement in the
+  market through exclusion or a caste arrangement.\footnote{(Bonacich
+    1972).} Professors Semyonov and Lewin-Epstein have applied the theory
+  to the Israeli case in several works, famously in the book \emph{Hewers
+  of Wood and Drawer of Water} in which they found non-citizen Arabs who
+  entered the labor market after the Six-Day war to have formed a
+  lower-stratum beneath the three afore-mentioned groups.\footnote{(Semyonov
+    and Lewin-Epstein 1987).} Recently Bar-Chaim and Semyonov identified
+  ten geo cultural groups in the Israeli labor market based on ethnic
+  origin and immigrant generation. These groups are immigrants from
+  1.Asia, 2.Africa, 3.Europe and America, 4.the Former Soviet Union,
+  5.Ethiopia. Second generation 6.Asian, 7.African, 8.European or
+  American, 9.third generation Israeli Jews and 10.Arabs. Their work
+  produced interesting findings and quantified observations made by other
+  observers. For instance, immigrants from the FSU ranked 3rd highly in
+  education, with 13.64 years of formal schooling to the 15.22 completed
+  by the Israeli-born children of European and American immigrants and the
+  14.58 years of European and American immigrants themselves. They had
+  more than 2 and a half more years of average formal schooling than the
+  Asian immigrant group's 11.02, and yet their mean ISEI occupational
+  prestige was 43.84, only slightly above the Asian group's
+  43.81.(Bar-haim and Semyonov 2015, 330)
+  
+  This research sought to deal specifically with the case of
+  stratification in occupation. All occupations are ranked on a
+  one-hundred point scale of occupational prestige. Respondents then are
+  asked their ethnicity and occupation. From this data the range of
+  occupations held by an ethnicity can be described and compared to that
+  held by another group.
+  
+  This work discusses three refinements to Bonacich's Ethnic Antagonism.
+  In the \emph{succession model}, each new group of immigrants takes the
+  least-prestigious and poorest paid occupations in the hierarchy pushing
+  existing groups up the ladder. They however prefer the \emph{queuing
+  model} by which a surplus of lowest-status ethnic group members,
+  competing for a limi
+  
+  \chapter{Methodology}\label{sec:orgheadline7}
+  
+  Many proxies are available for social position within a stratified
+  society. These include individual or household income, household wealth,
+  ownership of durable goods, access to education, health care and
+  political power. Because of limited access to long-term, stable
+  employment in large firms or the public sector, immigrants may turn to
+  self-employment.(Semyonov and Barck de Raijman 1994, 376) Thus, there is
+  a need to compare groups on the basis of total individual earnings,
+  including self-employment income, and not on salary data alone.(Plaut
+  2014) Differing labor-force participation rates by gender among the
+  ethnic groups can yield differing household incomes from similar
+  individual incomes. Some have sought to instead measure a household's
+  standard of living by its consumption, rather than its income.(Lach
+  2007, 579)
+  
+  \section{Occupational Prestige}\label{sec:orgheadline5}
+  
+  I sought to focus on the question of occupational prestige among FSU
+  olim. The position of ethnic groups within the labor market is shown by
+  their mean status and standard deviation on Andrea Tyree's 100 point
+  scale for occupational prestige in Israel.\footnote{(Tyree 1981).} This
+  scale has been employed in several papers.\footnote{(Semyonov and
+    Lewin-Epstein 1987; Semyonov and Barck de Raijman 1994; Semyonov and
+    Lewin-Epstein 1991).} These would later be converted to the
+  International Socio-Economic Index of occupational status
+  (ISEI).\footnote{(Ganzeboom, De Graaf, and Treiman 1992; Bar-haim and
+    Semyonov 2015).} Their spread throughout the occupational structure is
+  represented by an Index of concentration, with one representing a
+  perfect spread among all occupations of all prestige levels. Changes
+  over time have been studied by asking immigrants their current
+  occupation, and their occupation of five years previous. A Socioeconomic
+  Status gap between occupational status in 1983 and 1978 was then
+  calculated. Israeli men gained in average status, moving from a mean
+  occupational prestige on Tyree's scale of 44.5 to 48.0. Western European
+  and North American immigrants suffered a drop in status from 59.1 to
+  57.4 that was less than half the decrease (55.0 to 50.1) felt by
+  immigrants from Latin America.\footnote{(Semyonov and Barck de Raijman
+    1994, 383).}
+  
+  \section{Factors Affecting Income}\label{sec:orgheadline6}
+  
+  Generally those who are older and live in cities earn a higher income
+  than young people in rural areas. Sixty-six percent of Israeli-born sons
+  of European and American immigrants live in Metropolitan Areas, their
+  average age in 45.22. The FSU immigrant population is more than a year
+  older (46.6 years) and only forty-two percent of them live in
+  Metropolitan Areas. How do these factors affect the 70\% more average
+  income from salary (14,819 NIS/month to 8,646) received by the
+  native-born group? How much of it is due to the previously discussed one
+  and a half year gap in formal schooling between groups, and how much to
+  occupational prestige?(Bar-haim and Semyonov 2015, 330) Semyonov and
+  Lewin-Epstein have defined a process of \emph{Decomposing Income
+  Differentials} in which multiple regression is used to determine the
+  contribution made to income by the components of the model, and the
+  residual which is due to ethnicity.
+  
+  \chapter{Review of Literature -}\label{review-of-literature--}
+  
+  \section{\texorpdfstring{\#\# \url{File:Lit} Review
+  3\{\#litReview3\}Characteristics of the FSU
+  pop}{\#\# File:Lit Review 3\{\#litReview3\}Characteristics of the FSU pop}}\label{filelit-review-3litreview3characteristics-of-the-fsu-pop}
+  
+  \section{Theories of Immigration}\label{theories-of-immigration}
+  
+  \section{Economic Stuff}\label{economic-stuff}
+  
+  \section{Policy of Absorbtion}\label{policy-of-absorbtion}
+  
+  \subsection{\texorpdfstring{``Israel as a Returning
+  Diaspora''}{Israel as a Returning Diaspora}}\label{israel-as-a-returning-diaspora}
+  
+  nice recent paper with good overviews
+  \href{file:///Users/AbuDavid/Documents/ThesisDocs/Amit,\%20Semyonov/2006/Amit,\%20Semyonov\%20-\%20Metropolis\%20world\%20bulletin\%20-\%202006.pdf}{Amit-Returning}
+  
+  \subsection{\texorpdfstring{``Ethnic Stratification in
+  Israel''}{Ethnic Stratification in Israel}}\label{ethnic-stratification-in-israel}
+  
+  There was good stuff in Bar-Chaim
+  \href{file:///Users/AbuDavid/Documents/ThesisDocs/Bar-haim,\%20Semyonov/2015/Bar-haim,\%20Semyonov\%20-\%20The\%20International\%20Handbook\%20of\%20the\%20Demography\%20of\%20Race\%20and\%20Ethnicity\%20-\%202015.pdf}{Bar-Chaim}
+  timing: 1989 collapse of FSU -\textgreater{} influx of immigrants to
+  Israel.
+  
+  \subsection{\texorpdfstring{``Migration Patterns to and from
+  Israel''}{Migration Patterns to and from Israel}}\label{migration-patterns-to-and-from-israel}
+  
+  \subsection{\texorpdfstring{``Self-Selection in moving to US or
+  IL''}{Self-Selection in moving to US or IL}}\label{self-selection-in-moving-to-us-or-il}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    autocite:Cohen2007a
+    \href{file:///Users/AbuDavid/Documents/ThesisDocs/Cohen,\%20Haberfeld/2007/Cohen,\%20Haberfeld\%20-\%20SELF-SELECTION\%20AND\%20EARNINGS\%20ASSIMILATION\%20IMMIGRANTS\%20FROM\%20THE\%20FORMER\%20SOVIET\%20UNION\%20IN\%20ISRAEL\%20AND\%20THE\%20UNITED\%20STATES\%20-\%2020.pdf}{cohen
+    Self Selection} different destination countries have different returns
+    to skills -p.650
+  \end{itemize}
+  
+  US granted refugee status to J. from FSU until 1989 - what about exit
+  visa from Soviet Union?
+  
+  after 1989 - family reunification visa to USA, but didn't other article
+  say this was earlier?
+  
+  skilled immigrants go to countries with high returns to skills,
+  low-skilled (less skilled) prefer social safety net countries
+  
+  compare rate of earnings growth for FSU immigrants v. US natives and IL
+  natives of similar demographics
+  
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \item
+    2 asumptions
+  
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+      skills are equally transferable
+  
+      \begin{itemize}
+      \tightlist
+      \item
+        non-native speaker
+      \item
+        advanced economies in IL and US
+      \end{itemize}
+    \item
+      FSU immigrants are treated equally by US and IL labor markets
+    \end{enumerate}
+  \item
+    2 waves of immigration = 1.8 Million J. + family members
+  
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+      1968- early 80s 350k
+    \item
+      late
+    \end{enumerate}
+  \end{enumerate}
+  
+  \subsection{TODO Cohen 2009 - Migration Patterns to and from
+  Israel}\label{todo-cohen-2009---migration-patterns-to-and-from-israel}
+  
+  autocite:cohen2009 has exported highlights (Cohen 2009, 115)
+  \href{file:///Users/AbuDavid/Documents/ThesisDocs/Cohen/2009/Cohen\%20-\%20Migration\%20Patterns\%20to\%20and\%20from\%20Israel\%20-\%202009.pdf}{The
+  pdf} these notes are in the file notes.org
+  
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \item
+    success of Z.
+  
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+      \% of world J. in IL
+    \item
+      \% J. v. A. in IL
+    \item
+      pop. growth rate of J. in IL
+    \end{enumerate}
+  \item
+    p. 119 - 350k emigrants from IL, 1/2 in US
+  
+    CBS \# of 480k includes IL Arabs, approx. 100k 2003 ministry of
+    absorbtion said 700k
+  
+    \begin{itemize}
+    \tightlist
+    \item
+      didn't account for mortality abroad
+    \end{itemize}
+  \item
+    rater of return migration are higher than most other sending countries
+  
+    \begin{itemize}
+    \tightlist
+    \item
+      not every IL who abroad for 1 yr will never come backend
+    \end{itemize}
+  \item
+    what is a good indicator for skills?
+  
+    \begin{itemize}
+    \tightlist
+    \item
+      emigrants return better educated than when they left
+    \item
+      but those w/ higher income stay in US, lower return
+    \end{itemize}
+  \item
+    FSU !!!
+  
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+      1st wave 400k 1989-1991
+  
+      \begin{itemize}
+      \tightlist
+      \item
+        400k immigrants to IL
+      \item
+        high schooling - 14 yrs
+      \end{itemize}
+    \item
+      then, up to 2000 (after 1992)
+  
+      \begin{itemize}
+      \tightlist
+      \item
+        60k to 80k annually
+      \item
+        only 13 yrs schooling
+      \end{itemize}
+    \item
+      conclusion
+  
+      \begin{itemize}
+      \tightlist
+      \item
+        in post 1991, higher edu. seek USA CANADA recently Germany
+  
+        \begin{itemize}
+        \tightlist
+        \item
+          in 2002 22k FSU J. \textgreater{} IL or US
+        \end{itemize}
+      \end{itemize}
+    \end{enumerate}
+  \item
+    impact of second intifada
+  
+    decline since 1999 -18k in 2007 -13k 2008 from 77k in 1999
+  
+    increase in \emph{annual emigration} (emigrants minus returnees)
+  \end{enumerate}
+  
+  Conclusions \{.unnumbered\}
+  
+  The existing research has extracted estimable conclusions from the
+  datasets available from the Israeli Central Bureau of Statistics - the
+  2009 Income Survey and the Immigrants Survey. It has shown that due to
+  the circumstances associated with the massive influx of FSU olim into
+  the job market that they have still been unable to fully convert their
+  human-capital into economic success in Israel.
+  
+  \chapter*{Appendix 1: Data Sets}\label{appendix-1-data-sets}
+  \addcontentsline{toc}{chapter}{Appendix 1: Data Sets}
+  
+  \section{List of data sets obtained from the Central Bureau of
+  Statistics for this
+  project.}\label{list-of-data-sets-obtained-from-the-central-bureau-of-statistics-for-this-project.}
+  
+  These files are from four surveys for various years:
+  
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Household Expenditure Survey
+  \item
+    Income Survey
+  \item
+    Labour Force Survey
+  \item
+    Social Survey
+  \end{enumerate}
+  
+  \begin{longtable}[]{@{}lllll@{}}
+  \toprule
+  Census File & Year & Contents & Household & Individual\tabularnewline
+  \midrule
+  \endhead
+  f210 & 2008 & Census Public Use File & x &\tabularnewline
+  f456 & 2014 & HES & x & x\tabularnewline
+  f457 & 2013 & HES & x & x\tabularnewline
+  f458 & 2012 & HES & x & x\tabularnewline
+  f459 & 2011 & HES & x & x\tabularnewline
+  f467 & 2005 & HES & x & x\tabularnewline
+  f468 & 2006 & HES & x & x\tabularnewline
+  f469 & 2007 & HES & x & x\tabularnewline
+  f472 & 2009 & HES & x & x\tabularnewline
+  f598 & 2011 & HES & x & x\tabularnewline
+  f599 & 2010 & HES & x & x\tabularnewline
+  f606 & 2006 & Income Survey - Household & x &\tabularnewline
+  f607 & 2007 & Income Survey - Household & x &\tabularnewline
+  f608 & 2008 & Income Survey - Household & x &\tabularnewline
+  f609 & 2009 & Income Survey - Household & x &\tabularnewline
+  f787 & 2008 & Israel Social Survey & x &\tabularnewline
+  f798puf & 2014 & Israel Social Survey & x &\tabularnewline
+  f820puf & 2006 & Labour Force Survey & x &\tabularnewline
+  f821puf & 2007 & Labour Force Survey & x &\tabularnewline
+  f822puf & 2008 & Labour Force Survey & x &\tabularnewline
+  f823pufn & 2009 & Labour Force Survey & x &\tabularnewline
+  f823pufy & 2009 & Labour Force Survey & x &\tabularnewline
+  f824puf & 2010 & Labour Force Survey & x &\tabularnewline
+  f825puf & 2011 & Labour Force Survey & x &\tabularnewline
+  \bottomrule
+  \end{longtable}
+  
+  \nocite{*} \backmatter
+  
+  \chapter{References}\label{references}
+  
+  \noindent
+  
+  \setlength{\parindent}{-0.20in} \setlength{\leftskip}{0.20in}
+  \setlength{\parskip}{8pt}
+  
+  \hypertarget{refs}{}
+  \hypertarget{ref-Bar-Chaim2015}{}
+  Bar-haim, Eyal, and Moshe Semyonov. 2015. ``Ethnic Stratifcation in
+  Israel.'' \emph{The International Handbook of the Demography of Race and
+  Ethnicity} 4: 323--37.
+  doi:\href{https://doi.org/10.1007/978-90-481-8891-8}{10.1007/978-90-481-8891-8}.
+  
+  \hypertarget{ref-Bonacich1972}{}
+  Bonacich, Edna. 1972. ``A Theory of Ethnic Antagonism: The Split Labor
+  Market.'' \emph{American Sociological Review} 37 (5). {[}American
+  Sociological Association, Sage Publications, Inc.{]}: 547--59.
+  \url{http://www.jstor.org/stable/2093450}.
+  
+  \hypertarget{ref-cohen2009}{}
+  Cohen, Yinon. 2009. ``Migration Patterns to and from Israel.''
+  \emph{Contemporary Jewry} 29 (2: Jewish Population Studies): 115--25.
+  doi:\href{https://doi.org/10.1007/s}{10.1007/s}.
+  
+  \hypertarget{ref-Over2015}{}
+  Evans, Matt. 2011. ``Population Dispersal Policy and the 1990s
+  Immigration Wave.'' \emph{Israel Studies} 20 (1): 104--28.
+  
+  \hypertarget{ref-Ganzeboom1992}{}
+  Ganzeboom, Harry B G, Paul M. De Graaf, and Donald J. Treiman. 1992. ``A
+  standard international socio-economic index of occupational status.''
+  \emph{Social Science Research} 21 (1): 1--56.
+  doi:\href{https://doi.org/10.1016/0049-089X(92)90017-B}{10.1016/0049-089X(92)90017-B}.
+  
+  \hypertarget{ref-goldscheider2001israel}{}
+  Goldscheider, Calvin. 2002. \emph{Israel's Changing Society: Population,
+  Ethnicity, and Development}. Boulder, Colorado: Westview Press.
+  
+  \hypertarget{ref-Haberfeld2007}{}
+  Haberfeld, Yitchak, and Yinon Cohen. 2007. ``Gender, ethnic, and
+  national earnings gaps in Israel: The role of rising inequality.''
+  \emph{Social Science Research} 36 (2): 654--72.
+  doi:\href{https://doi.org/10.1016/j.ssresearch.2006.02.001}{10.1016/j.ssresearch.2006.02.001}.
+  
+  \hypertarget{ref-Israel2008}{}
+  Israel Central Bureau of Statistics. 2009. \emph{Israel in statistics,
+  1948-2007}. Jerusalem: Israel Central Bureau of Statistics.
+  \href{http://www.cbs.gov.il/statistical/statistical60\%7B/_\%7Deng.pdf}{http://www.cbs.gov.il/statistical/statistical60\{\textbackslash{}\_\}eng.pdf}.
+  
+  \hypertarget{ref-Lach2007}{}
+  Lach, Saul. 2007. ``Immigration and Prices.'' \emph{Journal of Political
+  Economy} 115 (4): 548--87.
+  doi:\href{https://doi.org/10.1086/521529}{10.1086/521529}.
+  
+  \hypertarget{ref-Lerner2007}{}
+  Lerner, Julia, Tamar Rapoport, and Edna Lomsky-Feder. 2007. ``The ethnic
+  script in action: The regrounding of Russian Jewish immigrants in
+  Israel.'' \emph{Ethos} 35 (2): 168--95.
+  doi:\href{https://doi.org/10.1525/ETH.2007.35.2.168.THE}{10.1525/ETH.2007.35.2.168.THE}.
+  
+  \hypertarget{ref-Plaut2014a}{}
+  Plaut, Steven. 2014. ``The Myth of Ethnic Inequality in Israel.''
+  \emph{Middle East Quarterly}, 1--12.
+  \url{http://www.meforum.org/3839/israel-inequality}.
+  
+  \hypertarget{ref-Semyonov1994a}{}
+  Semyonov, Moshe, and Rebeca Barck de Raijman. 1994. \emph{Modes of labor
+  market incorporation and occupational cost among new immigrants to
+  Israel}. Discussion Paper (Mekhon Goldah Meir Le-Hikre 'Avodah
+  Ve-Hevrah). Tel Aviv: Golda Meir Institute.
+  
+  \hypertarget{ref-Semyonov1987}{}
+  Semyonov, Moshe, and Noah Lewin-Epstein. 1987. \emph{Hewers of wood and
+  drawers of water: noncitizen Arabs in the Israeli labor market}. Cornell
+  International Industrial and Labor Relations Reports. Ithaca, NY: ILR
+  Press.
+  
+  \hypertarget{ref-Semyonov1991}{}
+  ---------. 1991. ``Suburban labor markets, urban labor markets, and
+  gender inequality in earning.'' \emph{Sociological Quarterly} 32 (4):
+  611--20.
+  
+  \hypertarget{ref-Semyonov2011b}{}
+  Semyonov, Moshe; Lewin-Epstein, Noah. 2011. ``Wealth Inequality: Ethnic
+  Disparities in Israeli Society.'' \emph{Social Forces} 89 (March):
+  935--59.
+  doi:\href{https://doi.org/10.1353/sof.2011.0006}{10.1353/sof.2011.0006}.
+  
+  \hypertarget{ref-stat2015}{}
+  Statistics, Central Bureau of. 2015. ``Statistical Abstract of Israel.''
+  In. Jerusalem: Central Bureau of Statistics.
+  \url{http://www.cbs.gov.il/reader/shnaton/shnatone_new.htm?CYear=2015\&Vol=66\&CSubject=2}.
+  
+  \hypertarget{ref-Tyree1981}{}
+  Tyree, Andrea. 1981. ``Occupational Socioeconomic Status, Ethnicity and
+  Sex in Israel: Consideration in Scale Construction.'' \emph{Megamot} 27
+  (1). Henrietta Szold Institute: 7--21.
+  \url{http://www.jstor.org/stable/23655402}.
+
+
+  % Index?
+
+\end{document}
+

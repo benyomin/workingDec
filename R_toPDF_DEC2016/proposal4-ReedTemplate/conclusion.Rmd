@@ -1,0 +1,18 @@
+---
+output: pdf_document
+---
+
+# Conclusion {.unnumbered}
+  \setcounter{chapter}{4}
+	\setcounter{section}{0}
+
+If we don't want Conclusion to have a chapter number next to it, we can add the `{.unnumbered}` attribute.  This has an unintended consequence of the sections being labeled as 3.6 for example though instead of 4.1.  The \LaTeX\ commands immediately following the Conclusion declaration get things back on track.
+
+#### More info
+
+And here's some other random info: the first paragraph after a chapter title or section head _shouldn't be_ indented, because indents are to tell the reader that you're starting a new paragraph. Since that's obvious after a chapter or section title, proper typesetting doesn't add an indent there.
+
+<!--
+If you feel it necessary to include an appendix, it goes here.
+-->
+

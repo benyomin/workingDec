@@ -1,0 +1,212 @@
+---
+output: pdf_document
+---
+<!--
+The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
+-->
+
+
+Introduction {.unnumbered}
+============
+## Kinds of Russians
+
+* Jews
+* non-Jews
+* those who immigrated to Israel
+* those who immigrated to other countries
+        1. US
+        2. Germany and W. Europe
+        3. elsewhere
+* those who stayed in Russia
+
+The term *Russian* in common Israeli parlance is a synedoche referring
+to immigrants from the several states of the Former Soviet Union (FSU)
+who have arrived in several waves since 1989. An immigrant who came to
+Israel [^1] in 1992 or 2002 from Georgia or Latvia is a *Russian*.
+Former Foreign Minister Moshe Sharett was born in the Russian Empire, in
+what is now Ukraine. He made aliyah in 1910. He may be called an
+Ashkenazi Jew, a member of the Second Aliyah, the New Yishuv and the
+Generation of the Founders, but he is not called a *Russian*. The
+167,000 Soviet olim between the Six-Day War and 1988 form an edge-case,
+they may be called either Israeli or Russian depending on their
+perceived level of integration into Israeli society. This research deals
+with the place of post-1989 FSU olim in the ethnically stratified
+Israeli labor market. It attempts to determine if the Israeli labor
+market meets the objective criteria set by economists that would
+classify it as ethnically stratified. It then looks for data which could
+aid in placing the Russians within this system of stratification.
+Finally it seeks to determine their place within this system and any
+changes that have occurred over time to the system and their position
+within it.
+
+Population of Israel {#sec:orgheadline3}
+====================
+
+At the end of 2015 the population of Israel included 6.2 million Jews,
+1.7 million Arabs and 357,500 others.[^2] Among these others are 300,000
+non-Jewish immigrants from the FSU.[^3] These new immigrants from the
+FSU entered into a labor market with an existing system of
+stratification, with European and American Jews and the top, African and
+Asian Jews in the middle and Arab citizens of Israel at the bottom.[^4]
+Historical migration patterns had put this stratified system in place,
+with pre-state immigration mostly coming from Central and Eastern
+Europe. These early immigrants established the pre-state institutions
+that became the foundations of the Israeli state. They were in an
+advantageous position to occupy positions of high status and high
+political, economic and social power. The lasting socioeconomic effects
+of the circumstances surrounding initial absorption conditions and
+spatial location have been noted.[^5] Among the dimensions of social
+stratification are income, occupation, education, political power,
+standard of living and place of residence.[^6] This paper specifically
+reviews the question of occupational stratification as measured by
+occupational prestige.
+
+Arrival of the Russians {#sec:orgheadline2}
+-----------------------
+
+After the founding of the state, a Mass Immigration (1948-1952) took
+place which more than doubled the population from 600,000 to almost 1.5
+million. Immigration then became moderate and sporadic from 1953 to
+1989,[@Bar-Chaim2015 325] averaging around 50,000 per
+year.[@goldscheider2001israel 43] The first wave of FSU olim, from 1989
+to 1991 numbered 400,000. The second wave lasted until 1995 and brought
+300,000 more. Between 1995 and 2006 50,000 more arrived in
+Israel.[@Israel2008] The conditions of FSU olim absorption, including
+the shift in government policy in 1989-1990 to *direct absoption* in
+which olim received an *absorption basket* of grants which they then had
+discrection to spend have been discussed and compared with earlier
+policies.[@Semyonov2011b] One finding was that, used to full-employment
+and low-quality housing in the Soviet Union, FSU olim would share
+crowded, expensive accomodations in the center of Israel rather than
+one-family flats in peripheral areas.[^7] Recent interviews with FSU
+olim who were University students in Israel showed the persistence of a
+drive for higher education, despite its decreased monetary rewards in
+Israel as compared to the Soviet Union.[^8]
+
+Labor Market Stratification Theory {#sec:orgheadline4}
+==================================
+
+The theory of an ethnically stratified labor market was elaborated by
+Edna Bonacich. Different ethnic groups in the labor market have varying
+costs of labor due to differing resources and motives for participation
+in the labor market. Ethnic antagonism will result from this price
+differential as the higher-priced group attempts to maintain employment.
+The expensive labor group will attempt to resist displacement in the
+market through exclusion or a caste arrangement. [^9] Professors
+Semyonov and Lewin-Epstein have applied the theory to the Israeli case
+in several works, famously in the book *Hewers of Wood and Drawer of
+Water* in which they found non-citizen Arabs who entered the labor
+market after the Six-Day war to have formed a lower-stratum beneath the
+three afore-mentioned groups.[^10] Recently Bar-Chaim and Semyonov
+identified ten geo cultural groups in the Israeli labor market based on
+ethnic origin and immigrant generation. These groups are immigrants from
+1.Asia, 2.Africa, 3.Europe and America, 4.the Former Soviet Union,
+5.Ethiopia. Second generation 6.Asian, 7.African, 8.European or
+American, 9.third generation Israeli Jews and 10.Arabs. Their work
+produced interesting findings and quantified observations made by other
+observers. For instance, immigrants from the FSU ranked 3rd highly in
+education, with 13.64 years of formal schooling to the 15.22 completed
+by the Israeli-born children of European and American immigrants and the
+14.58 years of European and American immigrants themselves. They had
+more than 2 and a half more years of average formal schooling than the
+Asian immigrant group’s 11.02, and yet their mean ISEI occupational
+prestige was 43.84, only slightly above the Asian group’s
+43.81.[@Bar-Chaim2015 330]
+
+This research sought to deal specifically with the case of
+stratification in occupation. All occupations are ranked on a
+one-hundred point scale of occupational prestige. Respondents then are
+asked their ethnicity and occupation. From this data the range of
+occupations held by an ethnicity can be described and compared to that
+held by another group.
+
+This work discusses three refinements to Bonacich’s Ethnic Antagonism.
+In the *succession model*, each new group of immigrants takes the
+least-prestigious and poorest paid occupations in the hierarchy pushing
+existing groups up the ladder. They however prefer the *queuing model*
+by which a surplus of lowest-status ethnic group members, competing for
+a limi
+
+Methodology {#sec:orgheadline7}
+===========
+
+Many proxies are available for social position within a stratified
+society. These include individual or household income, household wealth,
+ownership of durable goods, access to education, health care and
+political power. Because of limited access to long-term, stable
+employment in large firms or the public sector, immigrants may turn to
+self-employment.[@Semyonov1994a 376] Thus, there is a need to compare
+groups on the basis of total individual earnings, including
+self-employment income, and not on salary data alone.[@Plaut2014a]
+Differing labor-force participation rates by gender among the ethnic
+groups can yield differing household incomes from similar individual
+incomes. Some have sought to instead measure a household’s standard of
+living by its consumption, rather than its income.[@Lach2007 579]
+
+Occupational Prestige {#sec:orgheadline5}
+---------------------
+
+I sought to focus on the question of occupational prestige among FSU
+olim. The position of ethnic groups within the labor market is shown by
+their mean status and standard deviation on Andrea Tyree’s 100 point
+scale for occupational prestige in Israel.[^11] This scale has been
+employed in several papers.[^12] These would later be converted to the
+International Socio-Economic Index of occupational status (ISEI).[^13]
+Their spread throughout the occupational structure is represented by an
+Index of concentration, with one representing a perfect spread among all
+occupations of all prestige levels. Changes over time have been studied
+by asking immigrants their current occupation, and their occupation of
+five years previous. A Socioeconomic Status gap between occupational
+status in 1983 and 1978 was then calculated. Israeli men gained in
+average status, moving from a mean occupational prestige on Tyree’s
+scale of 44.5 to 48.0. Western European and North American immigrants
+suffered a drop in status from 59.1 to 57.4 that was less than half the
+decrease (55.0 to 50.1) felt by immigrants from Latin America.[^14]
+
+Factors Affecting Income {#sec:orgheadline6}
+------------------------
+
+Generally those who are older and live in cities earn a higher income
+than young people in rural areas. Sixty-six percent of Israeli-born sons
+of European and American immigrants live in Metropolitan Areas, their
+average age in 45.22. The FSU immigrant population is more than a year
+older (46.6 years) and only forty-two percent of them live in
+Metropolitan Areas. How do these factors affect the 70% more average
+income from salary (14,819 NIS/month to 8,646) received by the
+native-born group? How much of it is due to the previously discussed one
+and a half year gap in formal schooling between groups, and how much to
+occupational prestige?[@Bar-Chaim2015 330] Semyonov and Lewin-Epstein
+have defined a process of *Decomposing Income Differentials* in which
+multiple regression is used to determine the contribution made to income
+by the components of the model, and the residual which is due to
+ethnicity.
+
+
+
+[^1]: Immigrant to Israel: m.s. *oleh*, f.s. *olah*, pl. *olim*.
+
+[^2]: [@stat2015].
+
+[^3]: [@cohen2009].
+
+[^4]: [@Haberfeld2007].
+
+[^5]: [@Bar-Chaim2015 325-326].
+
+[^6]: [@Semyonov1987 8].
+
+[^7]: [@Over2015].
+
+[^8]: [@Lerner2007].
+
+[^9]: [@Bonacich1972].
+
+[^10]: [@Semyonov1987].
+
+[^11]: [@Tyree1981].
+
+[^12]: [@Semyonov1987; @Semyonov1994a; @Semyonov1991].
+
+[^13]: [@Ganzeboom1992; @Bar-Chaim2015].
+
+[^14]: [@Semyonov1994a 383].

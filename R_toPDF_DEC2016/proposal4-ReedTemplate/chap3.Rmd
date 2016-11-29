@@ -1,0 +1,15 @@
+---
+header-includes:
+- \usepackage{graphicx,latexsym}
+- \usepackage{amssymb,amsthm,amsmath}
+- \usepackage{longtable,booktabs,setspace}
+---
+
+Conclusions {.unnumbered}
+
+The existing research has extracted estimable conclusions from the
+datasets available from the Israeli Central Bureau of Statistics - the
+2009 Income Survey and the Immigrants Survey. It has shown that due to
+the circumstances associated with the massive influx of FSU olim into
+the job market that they have still been unable to fully convert their
+human-capital into economic success in Israel.

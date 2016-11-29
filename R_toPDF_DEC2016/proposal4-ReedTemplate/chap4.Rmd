@@ -1,0 +1,43 @@
+---
+---
+
+Appendix 1: Data Sets {.unnumbered}
+=====================
+
+## List of data sets obtained from the Central Bureau of Statistics for this project.
+
+These files are from four surveys for various years:
+
+1. Household Expenditure Survey
+2. Income Survey
+3. Labour Force Survey
+4. Social Survey
+
+Census File  |Year  |Contents                |Household  |Individual
+-------------|------|------------------------|-----------|----------
+   f210      |2008  |Census Public Use File  |x          |
+   f456      |2014  | HES                    |x          |x 
+   f457      |2013  | HES                    |x          |x
+   f458      | 2012 | HES |x  |x
+   f459      | 2011 | HES |x  |x
+   f467      |2005  | HES |x  |x
+   f468      | 2006 | HES |x  |x
+   f469      | 2007 | HES |x  |x
+   f472      | 2009 | HES |x  |x
+   f598      | 2011 | HES |x  |x
+   f599      | 2010 | HES |x  |x
+   f606      | 2006 | Income Survey - Household |x  |
+   f607      | 2007 | Income Survey - Household| x |
+   f608      | 2008 | Income Survey - Household |x  |
+   f609      | 2009 | Income Survey - Household |x  |
+   f787      | 2008 | Israel Social Survey |x  |
+   f798puf   | 2014 | Israel Social Survey |x  |
+   f820puf   | 2006 | Labour Force Survey |x  |
+   f821puf   | 2007 | Labour Force Survey |x  |
+   f822puf   | 2008 | Labour Force Survey |x  |
+   f823pufn  | 2009 | Labour Force Survey |x  |
+   f823pufy  | 2009 | Labour Force Survey |x  | 
+   f824puf   | 2010 | Labour Force Survey |x  | 
+   f825puf   | 2011 | Labour Force Survey |x  | 
+  
+ 

@@ -4,7 +4,7 @@ author: "Brandon Payne"
 fontsize: 12pt
 papersize: a4
 fontfamily: kpfonts
-bibliography: references.bib
+bibliography: currentEcon.bib
 biblio-style: authoryear-comp
 subparagraph: true
 toc: false
@@ -22,7 +22,12 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
-library(ggplot2)
+source("./updatePackage.R",  echo=FALSE)
+source("./getHousePrices.R", echo=FALSE)
+source("./importPrices.R",   echo=FALSE)
+source("./getGDP.R",         echo=FALSE)
+source("./graphGDPhouseholdConsumption.R",echo=FALSE)
+
 ```
 
 \begin{abstract}
@@ -52,7 +57,7 @@ Consider an interest-rate reduction, this shifts the demand curve to the right, 
 The average house price has risen by an astonishing 80% between the 2008 global financial crisis and 2016.
 In the minds of many lay observers this indicates a lack of supply, with main bottlenecks limiting supply being cited as the sale of government land or the lengthy permitting process for new construction.
 
-Gruber(citation) however offers copious evidence and cogent reasoning to support his claim that the chief factor in the rise was actually excessive demand. As global capital markets suffered large declines investors moved to other asset classes, including the real estate market. The additional factor of low interest rates lead to a dramatic increase in purchase of additional houses by those who were already owner-occupiers. This shifted the demand curve to the right, increasing the average cost of an apartment and driving out less affluent first-time homebuyers. These would-be first-time homebuyers then entered or remained in the rental market, driving up average rents. The higher market rental prices and lowered vacancy rate established a feedback loop which further encouraged in the purchase of investment houses as rental property.
+Gruber [@gruberSep2016], however, offers copious evidence and cogent reasoning to support his claim that the chief factor in the rise was actually excessive demand. As global capital markets suffered large declines investors moved to other asset classes, including the real estate market. The additional factor of low interest rates lead to a dramatic increase in purchase of additional houses by those who were already owner-occupiers. This shifted the demand curve to the right, increasing the average cost of an apartment and driving out less affluent first-time homebuyers. These would-be first-time homebuyers then entered or remained in the rental market, driving up average rents. The higher market rental prices and lowered vacancy rate established a feedback loop which further encouraged in the purchase of investment houses as rental property.
 ## Consumption by Households
 The expenditure method for calculating National Income (Y), states that Y=GDP=C+I+G+NX.
 The gross domestic product is equal to Consumption Expenditure (C) plus Investment Expenditure (I) plus Government Expenditure (G) plus Net Exports (NX). Firms and households each engage in both consumption and investment. 

@@ -1,0 +1,156 @@
+---
+header-includes:
+- \usepackage{amssymb,amsthm,amsmath}
+- \usepackage{mathtools}
+output: pdf_document
+---
+# Review of Literature{#litReview}
+\subsection{Characteristics of the FSU pop}
+\label{sec:orgheadline1}
+\subsection{Theories of Immigration}
+\label{sec:orgheadline2}
+\subsection{Economic Stuff}
+\label{sec:orgheadline3}
+\subsection{Policy of Absorbtion}
+\label{sec:orgheadline17}
+**
+\subsubsection{"Israel as a Returning Diaspora"}
+\label{sec:orgheadline4}
+nice recent paper with good overviews
+\href{file:///Users/AbuDavid/Documents/ThesisDocs/Amit, Semyonov/2006/Amit, Semyonov - Metropolis world bulletin - 2006.pdf}{Amit-Returning}
+
+\subsubsection{"Ethnic Stratification in Israel"}
+\label{sec:orgheadline5}
+
+There was good stuff in Bar-Chaim 
+\href{file:///Users/AbuDavid/Documents/ThesisDocs/Bar-haim, Semyonov/2015/Bar-haim, Semyonov - The International Handbook of the Demography of Race and Ethnicity - 2015.pdf}{Bar-Chaim}
+timing: 1989 collapse of FSU -> influx of immigrants to Israel.
+
+\subsubsection{"Migration Patterns to and from Israel"}
+\label{sec:orgheadline6}
+\subsubsection{"Self-Selection in moving to US or IL"}
+\label{sec:orgheadline9}
+\begin{itemize}
+\item \autocite{Cohen2007a} \href{file:///Users/AbuDavid/Documents/ThesisDocs/Cohen, Haberfeld/2007/Cohen, Haberfeld - SELF-SELECTION AND EARNINGS ASSIMILATION IMMIGRANTS FROM THE FORMER SOVIET UNION IN ISRAEL AND THE UNITED STATES - 20.pdf}{cohen Self Selection}
+   different destination countries have different returns to skills -p.650
+\end{itemize}
+
+US granted refugee status to J. from FSU until 1989 - what about exit visa from Soviet Union?
+
+after 1989 - family reunification visa to USA, but didn't other article say this was earlier?
+
+skilled immigrants go to countries with high returns to skills, low-skilled  (less skilled) prefer social safety net countries
+
+compare rate of earnings growth for FSU immigrants v. US natives and IL natives of similar demographics
+
+\begin{enumerate}
+\item 2 asumptions
+\label{sec:orgheadline7}
+\begin{enumerate}
+\item skills are equally transferable
+\begin{itemize}
+\item non-native speaker
+\item advanced economies in IL and US
+\end{itemize}
+\item FSU immigrants are treated equally by US and IL labor markets
+\end{enumerate}
+
+\item 2 waves of immigration = 1.8 Million J. + family members
+\label{sec:orgheadline8}
+\begin{enumerate}
+\item 1968- early 80s 350k
+\item late
+\end{enumerate}
+\end{enumerate}
+
+\subsubsection{{\bfseries\sffamily TODO} Cohen 2009 - Migration Patterns to and from Israel}
+\label{sec:orgheadline16}
+\autocite{cohen2009}    has exported highlights
+\autocite[115]{cohen2009}  \href{file:///Users/AbuDavid/Documents/ThesisDocs/Cohen/2009/Cohen - Migration Patterns to and from Israel - 2009.pdf}{The pdf}
+  these notes are in the file notes.org 
+\begin{enumerate}
+\item success of Z.
+\label{sec:orgheadline10}
+\begin{enumerate}
+\item \% of world J. in IL
+\item \% J. v. A. in IL
+\item pop. growth rate of J. in IL
+\end{enumerate}
+
+\item p. 119 - 350k emigrants from IL, 1/2 in US
+\label{sec:orgheadline11}
+CBS \# of 480k includes IL Arabs, approx. 100k
+2003 ministry of absorbtion said 700k
+\begin{itemize}
+\item didn't account for mortality abroad
+\end{itemize}
+
+\item rater of return migration are higher than most other sending countries
+\label{sec:orgheadline12}
+\begin{itemize}
+\item not every IL who abroad for 1 yr will never come backend
+\end{itemize}
+\item what is a good indicator for skills?
+\label{sec:orgheadline13}
+\begin{itemize}
+\item emigrants return better educated than when they left
+\item but those w/ higher income stay in US, lower return
+\end{itemize}
+
+\item FSU  !!!
+\label{sec:orgheadline14}
+\begin{enumerate}
+\item 1st wave 400k 1989-1991
+\begin{itemize}
+\item 400k immigrants to IL
+\item high schooling - 14 yrs
+\end{itemize}
+
+\item then, up to 2000 (after 1992)
+\begin{itemize}
+\item 60k to 80k annually
+\item only 13 yrs schooling
+\end{itemize}
+\item conclusion
+\begin{itemize}
+\item in post 1991, higher edu. seek 
+USA
+CANADA
+recently Germany
+\begin{itemize}
+\item in 2002 22k FSU J. > IL or US
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+\item impact of second intifada
+\label{sec:orgheadline15}
+decline since 1999
+-18k in 2007
+-13k 2008
+from 77k in 1999
+
+increase in \emph{annual emigration} (emigrants minus returnees)
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{bibliography section}
+\label{sec:orgheadline18}
+
+
