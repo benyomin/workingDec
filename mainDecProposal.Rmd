@@ -5,7 +5,7 @@ fontsize: 12pt
 papersize: a4
 fontfamily: kpfonts
 bibliography: currentEcon.bib
-biblio-style: authoryear-comp
+biblio-style: notes
 subparagraph: true
 toc: false
 output: 
@@ -17,7 +17,7 @@ output:
       in_header: preamble.tex
     keep_tex: yes
     number_sections: yes
-    citation_package: biblatex
+    citation_package: biblatex-chicago
 ---
 
 ```{r setup, include=FALSE}
